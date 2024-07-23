@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
-        },
-        
+        }
     })
     .then(response => {
         if (!response.ok) {
@@ -18,12 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
         data.forEach(item => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${item.idproveedor}</td>
-                <td>${item.nombre}</td>
                 <td>${item.ruc}</td>
+                <td>${item.nombre}</td>
+                <td>${item.ubigeo}</td>
+                <td>${item.departamento}</td>
+                <td>${item.provincia}</td>
+                <td>${item.distrito}</td>
                 <td>${item.direccion}</td>
-                <td>${item.telefono}</td>
-                <td>${item.email}</td>
+                
             `;
             tablaBody.appendChild(row);
         });
