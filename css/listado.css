@@ -1,0 +1,18 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ff0000;
+    text-align: left;
+    padding: 8px;
+    color: #ffffff;
+    background-color: rgb(1, 87, 58);
+}
+th {
+    background-color: #00eeff;
+    color: black;
+}
+.titulo{
+    text-align: center;
+}
