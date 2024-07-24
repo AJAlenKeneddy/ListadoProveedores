@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    fetch('http://gmingenieros.somee.com/api/Consultas/Obtener_Todos_Los_Proveedores', {
+    fetch('https://gmingenieros.somee.com/api/Consultas/Obtener_Todos_Los_Proveedores', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
